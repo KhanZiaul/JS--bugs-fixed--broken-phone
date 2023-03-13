@@ -55,6 +55,7 @@ const displayPhones = (phones, dataLimit) =>{
     });
 
     // stop spinner or loader
+    
     toggleSpinner(false);
 }
 
@@ -81,10 +82,10 @@ document.getElementById('search-field').addEventListener('keypress', function (e
 const toggleSpinner = isLoading => {
     const loaderSection = document.getElementById('loader');
     if(!isLoading){
-        loaderSection.classList.remove('d-none')
+        loaderSection.classList.add('d-none')
     }
     else{
-        loaderSection.classList.add('d-none');
+        loaderSection.classList.remove('d-none');
     }
 }
 
@@ -113,5 +114,3 @@ const displayPhoneDetails = phone =>{
         <p>Sensor: ${phone.mainFeatures.sensors ? phone.mainFeatures.sensors[0] : 'no sensor'}</p>
     `
 }
-
-loadPhones('apple');

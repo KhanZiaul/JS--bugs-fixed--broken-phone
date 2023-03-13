@@ -10,25 +10,18 @@
 </head>
 
 <body>
-    <header>
+    <header class="text-center mt-5">
         <h1>Welcome to my Phone Hunter!</h1>
     </header>
     <main class="container">
         <section>
-            <div class="mb-3 w-50">
-                <input id="search-field" type="email" class="form-control" id="exampleFormControlInput1"
+            <div class="mb-3 w-50 mx-auto">
+                <input id="search-field" type="email" class="form-control d-block mt-3 mb-3" id="exampleFormControlInput1"
                     placeholder="search your phone">
-                <div id="btn-search" class="btn btn-primary">Search</div>
+                <div id="btn-search" class="btn btn-primary d-block">Search</div>
             </div>
         </section>
-        <!-- loader -->
-        <section id="loader" class="d-none">
-            <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
-                <div class="spinner-border  text-success" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div>
-            </div>
-        </section>
+       
         <!-- display Search Result -->
         <section>
             <div id="phones-container" class="row row-cols-1 row-cols-md-3 g-4">
@@ -39,6 +32,15 @@
             </div>
             <div id="show-all" class="text-center d-none">
                 <div id="btn-show-all" class="btn btn-primary">Show All</div>
+            </div>
+        </section>
+
+         <!-- loader -->
+         <section id="loader" class="d-none">
+            <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border  text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
         </section>
         

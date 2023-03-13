@@ -80,6 +80,7 @@ document.getElementById('search-field').addEventListener('keypress', function (e
 });
 
 const toggleSpinner = isLoading => {
+    
     const loaderSection = document.getElementById('loader');
     if(!isLoading){
         loaderSection.classList.add('d-none')

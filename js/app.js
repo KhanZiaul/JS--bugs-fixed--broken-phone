@@ -98,7 +98,7 @@ const loadPhoneDetails = async id =>{
     const res = await fetch(url);
     const data = await res.json();
     displayPhoneDetails(data.data);
-    console.log(data)
+    console.log(data.data)
 }
 
 const displayPhoneDetails = phone =>{

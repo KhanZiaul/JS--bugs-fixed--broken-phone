@@ -47,7 +47,6 @@ const displayPhones = (phones, dataLimit) =>{
     // stop spinner or loader
     toggleSpinner(false);
 }
-
 const processSearch = (dataLimit) =>{
     toggleSpinner(true);
     const searchField = document.getElementById('search-field');

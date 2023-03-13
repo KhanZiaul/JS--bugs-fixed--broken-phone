@@ -74,13 +74,14 @@ document.getElementById('btn-search').addEventListener('click', function(){
 
 // search input field enter key handler
 document.getElementById('search-field').addEventListener('keypress', function (e) {
-    if (e.key === 'enter') {
+    if (e.key === 'Enter') {
         processSearch(true);
+        document.getElementById("btn-search").click();
     }
 });
 
 const toggleSpinner = isLoading => {
-    
+
     const loaderSection = document.getElementById('loader');
     if(!isLoading){
         loaderSection.classList.add('d-none')

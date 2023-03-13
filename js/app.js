@@ -11,7 +11,7 @@ const displayPhones = (phones, dataLimit) =>{
 
     const phonesContainer = document.getElementById('phones-container');
 
-    // phonesContainer.textContent = '';
+    phonesContainer.textContent = '';
 
     // display 10 phones only 
 
